@@ -1,0 +1,17 @@
+{
+    "name": "owl/owl-example",
+    "description": "Example plugin for Owl widgets",
+    "homepage": "http://scottbedard.net",
+    "keywords": ["laravel", "octobercms"],
+    "authors": [
+        {
+            "name": "Scott Bedard",
+            "email": "scottbedard90@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Owl\\": "owl/"
+        }
+    }
+}

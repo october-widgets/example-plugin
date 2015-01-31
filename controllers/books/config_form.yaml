@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Book
+
+# Model Form Field configuration
+form: $/owl/owl/models/book/fields.yaml
+
+# Model Class name
+modelClass: Owl\Owl\Models\Book
+
+# Default redirect location
+defaultRedirect: owl/owl/books
+
+# Create page
+create:
+    title: Create Book
+    redirect: owl/owl/books/update/:id
+    redirectClose: owl/owl/books
+
+# Update page
+update:
+    title: Edit Book
+    redirect: owl/owl/books
+    redirectClose: owl/owl/books
+
+# Preview page
+preview:
+    title: Preview Book

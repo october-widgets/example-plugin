@@ -1,0 +1,12 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label: Title
+
+    json_tags:
+        label: Categories
+        type: Owl\FormWidgets\Tagbox\Widget
