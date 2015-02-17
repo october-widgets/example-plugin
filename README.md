@@ -11,4 +11,4 @@ The [Has Many](https://github.com/october-widgets/hasmany) widget is used to all
 The [Tagbox](https://github.com/october-widgets/tagbox) widget can be used to easily manage many-to-many tag relationships. Here we're using it to manage the many genres a book may be tagged with.
 
 ### Address
-The [Address](https://github.com/october-widgets/geoaddress) widget is used to create easy inputs for our fictional shop locations.
+The [Address](https://github.com/october-widgets/address) widget is used to create easy inputs for our fictional shop locations.
