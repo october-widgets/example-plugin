@@ -1,5 +1,5 @@
 # Owl Example Plugin
-This plugin is intended for demonstration purposes only. Our example plugin will be for a fictional book store called Owl Books. To install this plugin, download contents to ```/plugins/owl/owl``` and run ```php artisan plugin:refresh Owl.Owl```.
+This plugin is intended for demonstration purposes only. Our example plugin will be for a fictional book store called Owl Books. To install this plugin, download contents to ```/plugins/owl/owl```, run a ```composer update``` from the example plugin directory, and finally run ```php artisan plugin:refresh Owl.Owl```.
 
 ### Comment
 The [Comment](https://github.com/october-widgets/comment) widget is used to provide extra information to the backend book form.
