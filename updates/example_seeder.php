@@ -14,14 +14,8 @@ class ExampleSeeder extends Seeder
 
     public function run()
     {
-        // Disable foreign key checks before running seeders
-        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-
         $this->seed_books();
         $this->seed_locations();
-
-        // Enable foreign keys
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 
     /**
