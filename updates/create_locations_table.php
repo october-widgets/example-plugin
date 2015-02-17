@@ -3,24 +3,24 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class CreateBooksTable extends Migration
+class CreateLocationsTable extends Migration
 {
 
     public function up()
     {
-        Schema::create('owl_owl_books', function($table)
+        Schema::create('owl_owl_locations', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('title')->nullable();
-            $table->string('author')->nullable();
+            $table->string('name')->nullable();
+            $table->string('address')->nullable();
             $table->timestamps();
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('owl_owl_books');
+        Schema::dropIfExists('owl_owl_locations');
     }
 
 }

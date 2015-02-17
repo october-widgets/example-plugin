@@ -3,6 +3,22 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
-        searchable: true
+
+    title:
+        label: Title
+
+    author:
+        label: Author
+
+    rating:
+        label: Average Rating
+        select: >
+            (SELECT ROUND(AVG(stars), 1) FROM owl_owl_books
+            INNER JOIN owl_owl_reviews
+            ON owl_owl_reviews.book_id = owl_owl_books.id)
+
+    tags:
+        label: Tags
+        select: >
+            (SELECT COUNT(*) FROM owl_owl_book_tag
+            WHERE owl_owl_book_tag.book_id = owl_owl_books.id)

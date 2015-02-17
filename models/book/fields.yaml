@@ -5,8 +5,45 @@
 fields:
 
     title:
+        span: left
         label: Title
 
-    json_tags:
-        label: Categories
-        type: Owl\FormWidgets\Tagbox\Widget
+    author:
+        span: right
+        label: Author
+
+    tagbox:
+        type: owl-tagbox
+        label: Tags
+
+    comment:
+        span: right
+        type: owl-comment
+        span: right
+        label: Comment
+        comment: >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
+            tortor dictum, euismod metus non, sollicitudin tellus. Donec mollis
+            diam mi, quis porta lorem venenatis ut. Aliquam dapibus eget odio et
+            fringilla. Integer interdum vitae dui eu vehicula. Aenean venenatis
+            nisl eget dictum facilisis. Pellentesque ut commodo odio. Fusce
+            porttitor eu augue semper iaculis. Integer a pretium ante, vel
+            semper nisi. Aliquam euismod, diam luctus lobortis imperdiet, metus
+            libero blandit diam, nec aliquam libero velit sit amet turpis.
+            Nullam vestibulum sem enim, sed porta erat condimentum id. Duis eu
+            velit nunc. Vivamus vulputate vestibulum nisi, at sagittis ante
+            cursus et. Fusce tristique magna metus, vitae molestie ligula dictum
+            nec. Nullam vitae facilisis dolor.
+
+    reviews:
+        span: left
+        type: owl-hasmany
+        label: Reviews
+        sortColumn: position
+        default:
+            icon: icon-comment
+            label: "{{ review }}"
+            comment: >
+                {% for i in 1..stars %}
+                    <i class='icon-star' style='color: gold; padding-right: 2px'></i>
+                {% endfor %}

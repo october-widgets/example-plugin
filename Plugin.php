@@ -40,13 +40,50 @@ class Plugin extends PluginBase
 
                 'sideMenu' => [
                     'books' => [
-                        'label'       => 'Books',
-                        'icon'        => 'icon-book',
-                        'url'         => Backend::url('owl/owl/books')
+                        'label'     => 'Books',
+                        'icon'      => 'icon-book',
+                        'url'       => Backend::url('owl/owl/books')
+                    ],
+                    'locations' => [
+                        'label'     => 'Locations',
+                        'icon'      => 'icon-map-marker',
+                        'url'       => Backend::url('owl/owl/locations')
                     ]
                 ]
 
             ]
+        ];
+    }
+
+    /**
+     * Returns OWL form widgets
+     * - Remove "alias" once October comes out of beta.
+     *
+     * @return  array
+     */
+    public function registerFormWidgets()
+    {
+        return [
+            'Owl\FormWidgets\HasMany\Widget' => [
+                'label' => 'Has Many',
+                'alias' => 'owl-hasmany',
+                'code'  => 'owl-hasmany'
+            ],
+            'Owl\FormWidgets\Tagbox\Widget' => [
+                'label' => 'Tagbox',
+                'alias' => 'owl-tagbox',
+                'code'  => 'owl-tagbox'
+            ],
+            'Owl\FormWidgets\Comment\Widget' => [
+                'label' => 'Comment',
+                'alias' => 'owl-comment',
+                'code'  => 'owl-comment'
+            ],
+            'Owl\FormWidgets\Address\Widget' => [
+                'label' => 'Address',
+                'alias' => 'owl-address',
+                'code'  => 'owl-address'
+            ],
         ];
     }
 

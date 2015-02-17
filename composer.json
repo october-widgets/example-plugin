@@ -9,9 +9,10 @@
             "email": "scottbedard90@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Owl\\": "owl/"
-        }
+    "require": {
+        "owl/hasmany": "~1.0@dev",
+        "owl/tagbox": "~1.0@dev",
+        "owl/comment": "~1.0@dev",
+        "owl/address": "~1.0@dev"
     }
 }

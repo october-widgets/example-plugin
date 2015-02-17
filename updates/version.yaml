@@ -1,3 +1,7 @@
 1.0.1:
     - First version of Owl Example
     - create_books_table.php
+    - create_tags_table.php
+    - create_reviews_table.php
+    - create_locations_table.php
+    - example_seeder.php

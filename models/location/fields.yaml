@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        span: left
+        label: Location Name
+
+    address:
+        span: right
+        type: owl-address
+        label: Address

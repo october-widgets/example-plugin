@@ -4,9 +4,9 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Books Back-end Controller
+ * Locations Back-end Controller
  */
-class Books extends Controller
+class Locations extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
@@ -20,6 +20,6 @@ class Books extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Owl.Owl', 'owl', 'books');
+        BackendMenu::setContext('Owl.Owl', 'owl', 'locations');
     }
 }

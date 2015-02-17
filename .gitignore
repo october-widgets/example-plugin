@@ -1,3 +1,4 @@
 /vendor
 /owl
 composer.lock
+composer.local.json

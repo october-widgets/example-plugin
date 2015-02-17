@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Location
+
+# Model Form Field configuration
+form: $/owl/owl/models/location/fields.yaml
+
+# Model Class name
+modelClass: Owl\Owl\Models\Location
+
+# Default redirect location
+defaultRedirect: owl/owl/locations
+
+# Create page
+create:
+    title: Create Location
+    redirect: owl/owl/locations/update/:id
+    redirectClose: owl/owl/locations
+
+# Update page
+update:
+    title: Edit Location
+    redirect: owl/owl/locations
+    redirectClose: owl/owl/locations
+
+# Preview page
+preview:
+    title: Preview Location
