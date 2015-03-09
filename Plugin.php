@@ -56,32 +56,31 @@ class Plugin extends PluginBase
     }
 
     /**
-     * Returns OWL form widgets
-     * - Remove "alias" once October comes out of beta.
+     * Registers Owl widgets
      *
      * @return  array
      */
     public function registerFormWidgets()
     {
         return [
+            'Owl\FormWidgets\Comment\Widget' => [
+                'label' => 'Comment',
+                'code'  => 'owl-comment'
+            ],
             'Owl\FormWidgets\HasMany\Widget' => [
                 'label' => 'Has Many',
-                'alias' => 'owl-hasmany',
                 'code'  => 'owl-hasmany'
+            ],
+            'Owl\FormWidgets\Money\Widget' => [
+                'lable' => 'Money',
+                'code'  => 'owl-money'
             ],
             'Owl\FormWidgets\Tagbox\Widget' => [
                 'label' => 'Tagbox',
-                'alias' => 'owl-tagbox',
                 'code'  => 'owl-tagbox'
-            ],
-            'Owl\FormWidgets\Comment\Widget' => [
-                'label' => 'Comment',
-                'alias' => 'owl-comment',
-                'code'  => 'owl-comment'
             ],
             'Owl\FormWidgets\Address\Widget' => [
                 'label' => 'Address',
-                'alias' => 'owl-address',
                 'code'  => 'owl-address'
             ],
         ];

@@ -13,8 +13,16 @@ fields:
         label: Author
 
     tagbox:
+        span: left
         type: owl-tagbox
         label: Tags
+
+    price:
+        span: right
+        type: owl-money
+        label: Price
+        prefix: "$ "
+        placeholder: "$ 0.00"
 
     comment:
         span: right

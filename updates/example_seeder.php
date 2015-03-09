@@ -25,7 +25,8 @@ class ExampleSeeder extends Seeder
     {
         $book = Book::create([
             'title'     => 'The Fellowship of the Ring',
-            'author'    => 'Tolkien'
+            'author'    => 'Tolkien',
+            'price'     => 9.95
         ]);
 
         $review1 = Review::create([

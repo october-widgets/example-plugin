@@ -14,6 +14,7 @@ class CreateBooksTable extends Migration
             $table->increments('id');
             $table->string('title')->nullable();
             $table->string('author')->nullable();
+            $table->decimal('price', 10, 2)->unsigned()->default(0);
             $table->timestamps();
         });
     }
